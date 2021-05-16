@@ -405,31 +405,32 @@ if checker in port:
 print(style.COLOR_LIGHT_CYAN)
 print(port.get(checker))
 print(style.LIGHT_WHITE)
+elif checker in port:
+    print(style.COLOR_LIGHT_GREEN + "\nThis Port is Avalable in Over Database"+ style.LIGHT_WHITE)
 if checker in chat:
-    print(style.COLOR_PURPLE +"This Port Is Run In Chat Service" + style.LIGHT_WHITE)
+    print(style.COLOR_PURPLE +"This Port Is Runnnig In Chat Service" + style.LIGHT_WHITE)
 
 if checker in encrypted:
-    print(style.BLUE + "This Port Is Run In Encrypted Service" + style.LIGHT_WHITE)   
+    print(style.BLUE + "This Port Is Running In Encrypted Service" + style.LIGHT_WHITE)   
 
 if checker in gaming:
-    print(style.GREEN + "This Port Is Run In Gaming Service"+ style.LIGHT_WHITE)    
+    print(style.GREEN + "This Port Is Running In Gaming Service"+ style.LIGHT_WHITE)    
 
 if checker in malicious:
-    print(style.RED + "This Port Is Run In Malicious Service"+ style.LIGHT_WHITE)        
+    print(style.RED + "This Port Is Running In Malicious Service"+ style.LIGHT_WHITE)        
 
 if checker in Peer_to_Pee:
-    print(style.COLOR_CYAN + "This Port Is Run In Peer to Pee Services"+ style.LIGHT_WHITE)              
+    print(style.COLOR_CYAN + "This Port Is Running In Peer to Pee Services"+ style.LIGHT_WHITE)              
 
 if checker in streaming:
-    print(style.YELLOW + "This Port Is Run In Streaming Service"+ style.LIGHT_WHITE)    
+    print(style.YELLOW + "This Port Is Running In Streaming Service"+ style.LIGHT_WHITE)    
 if checker >= Traceroute:
-    print(style.COLOR_LIGHT_GREEN + "\nThis Port is Avalable Over Database"+ style.LIGHT_WHITE)
+    print(style.COLOR_LIGHT_GREEN + "\nThis Port is Avalable in Over Database"+ style.LIGHT_WHITE)
 elif checker >= Traceroute:
     print(style.MAGENTA +"This Is Service Of " +style.UNDERLINE+ "Traceroute"+ style.LIGHT_WHITE)         
-elif checker in port:
-    print(style.COLOR_LIGHT_GREEN + "\nThis Port is Avalable Over Database"+ style.LIGHT_WHITE)
 
-else:
+
+elif checker not in port:
     print(style.LIGHT_RED + "\nThis Port is Not Avalable Over Database Try Other Port"+ style.LIGHT_WHITE)
 
 
